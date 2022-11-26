@@ -1,0 +1,44 @@
+.board{
+        display: flex;
+        flex-direction: column;
+}
+.board-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+}
+.letter{
+        text-align: right;
+        width: 5.5vw;
+        height: 1vw; 
+        border: 3vw;
+        
+}
+.number{
+        text-align:center;
+        width: 5vw;
+        height: 2vw;
+        border: 3vw;
+        font-weight:bold;
+}
+.cell-black{
+        width: 5vw;
+        height: 5vw;
+        border:solid 0.1mm ; color: rgb(100, 100, 100); 
+        background-color: black;
+}
+.cell-white{
+        width:5vw;
+        height: 5vw;
+        border: solid 0.1mm ;color: rgb(100, 100, 100);      
+}
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+}
+html{
+        height: 100%;
+}
