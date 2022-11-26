@@ -13,6 +13,7 @@
         width: 5.5vw;
         height: 1vw; 
         border: 3vw;
+        
 }
 .number{
         text-align:center;
@@ -30,7 +31,8 @@
 .cell-white{
         width:5vw;
         height: 5vw;
-        border: solid 0.1mm ;color: rgb(100, 100, 100);      
+        border: solid 0.1mm ;color: rgb(100, 100, 100);
+        
 }
 body{
         display: flex;
