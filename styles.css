@@ -17,10 +17,10 @@
 }
 .number{
         text-align:inherit;
-        width: 5vw;
-        height: 5vw;
-        border: 5vw;
-        font-size: 2vw;
+        width: 5.5vw;
+        height: 1vw;
+        border: 3vw;
+       
 }
 .cell-black{
         width: 5vw;
