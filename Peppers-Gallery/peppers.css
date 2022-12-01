@@ -42,6 +42,8 @@ html {
         overflow-y: scroll;
         list-style: none;
         justify-content: space-around; 
+        background-color: beige;
+        padding: 0;
     }
     .thumbnails-item {
         border:  solid 2px black;
