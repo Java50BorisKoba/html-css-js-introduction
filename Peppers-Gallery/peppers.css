@@ -15,8 +15,6 @@ html {
         background-color: beige;
         font-size: 1.5em;
         text-transform: uppercase;
-        margin: 0;
-        background-size: 100%;
     }
     .main-class {
         display: flex;
@@ -43,9 +41,7 @@ html {
         max-height: 30vh;
         overflow-y: scroll;
         list-style: none;
-        justify-content: space-around;
-        padding-left: 0;
-        margin: 0; 
+        justify-content: space-around; 
     }
     .thumbnails-item {
         border:  solid 2px black;
