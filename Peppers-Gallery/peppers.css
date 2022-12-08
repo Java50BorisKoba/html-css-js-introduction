@@ -151,21 +151,19 @@ h2 {
         --thumbnails-image-heigth: 17vh;
         --thumbnails-image-title: calc(var(--thumbnails-image-heigth)*0.33);
         --details-image-width:40vw;
-        --details-image-heigth:70vh;
+        --details-image-heigth:60vh;
     }
 
     .details-container {
         margin-top: 5vh;
         margin-right: 5vw;
     }
-    .details-image {
-        width: 45vw;
-        height: 35vw;
-    }
+
+    
     .thumbnails-list {
         padding-right: 2vw;
         margin-top: 2.5vh;
-        max-height: 86vh;
+        max-height: 75vh;
     }
 
     .thumbnails-title {
