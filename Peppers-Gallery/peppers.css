@@ -160,7 +160,7 @@ h2 {
     }
 
     .thumbnails-item {
-        max-width:var(--thumbnails-image-width)) ;
+        max-width:var(--thumbnails-image-width) ;
         max-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
         min-height: 22vh;
         padding-left: -2vw;
