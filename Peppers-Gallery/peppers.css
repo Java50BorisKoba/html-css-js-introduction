@@ -13,7 +13,7 @@ html {
 }
 body {
     height: 100%;
-    background-color: azure;
+    background-color:bisque;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -61,10 +61,13 @@ h2 {
 }
 .details-title {
     display: block;
-    background-color: aliceblue;
+    background-color:pink;
+    font-family: airstream;
+    font-style: italic;
+    font-size: 1.2em;
     position: absolute;
-    bottom: 3vh;
-    left: -3vw;
+    bottom: 1vh;
+    left: -1vw;
 }
 .thumbnails-list {
     display: flex;
@@ -77,7 +80,7 @@ h2 {
     margin-top: 3vh;
 }
 .thumbnails-item {
-    border: solid 2px blueviolet;
+    border: solid 2px black;
     margin-top: 2vh;
     border-radius: 25%;
     overflow: hidden;
@@ -158,12 +161,17 @@ h2 {
         margin-top: 5vh;
         margin-right: 5vw;
     }
+    .details-title{
+        font-size: 3em;
+    }
 
     .thumbnails-item {
         max-width:var(--thumbnails-image-width) ;
+        min-width: 15vw;
         max-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
-        min-height: 22vh;
+        min-height: 20vh;
         padding-left: -2vw;
+        margin-left: 2vw;
     }
     .thumbnails-list {
         padding-right: 2vw;
