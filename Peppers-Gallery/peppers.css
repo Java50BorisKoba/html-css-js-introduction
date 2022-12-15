@@ -44,15 +44,30 @@ h2 {
     justify-content: center;
     flex-grow: 1;
 }
+.main-class.hidden{
+     justify-content: space-around;
+}
+
 .details-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2vh;
 }
+.hidden .details-container{
+    display: none;
+}
 .details-frame {
     position: relative;
 }
+#hide-button{
+    position:absolute;
+    right: 4vw;
+    top: 3vh;
+    background-color:darkgray;
+    border-radius: 25%;
+}
+
 .details-image {
     width: var(--details-image-width);
     height: var(--details-image-heigth);
@@ -79,6 +94,10 @@ h2 {
     padding-left: 0;
     margin-top: 3vh;
 }
+.hidden .thumbnails-list{
+    max-height: 50vh;
+    
+}
 .thumbnails-item {
     border: solid 2px black;
     margin-top: 2vh;
@@ -87,6 +106,13 @@ h2 {
     min-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
     min-width: var(--thumbnails-image-width);
     max-width: var(--thumbnails-image-width);
+    max-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
+}
+.hidden .thumbnails-item {
+    height: 13vh;
+    max-width: var(--thumbnails-image-width);
+    max-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
+    min-height: 10vh;
 }
 .thumbnails-item:hover {
     transform: scale(1.1);
@@ -99,11 +125,15 @@ h2 {
     height:var(--thumbnails-image-heigth);
     display: block;
 }
+.hidden .thumbnails-image{
+    height: 11vh;
+}
 .thumbnails-title {
     display: block;
     text-align: center;
     background-color: antiquewhite;
     color: black;
+    height: var(--thumbnails-title-height);
     
 }
 @media (min-width: 560px) {
@@ -137,13 +167,31 @@ h2 {
         padding-left: 10px;
 
     }
+    .hidden .thumbnails-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-height: 80vh;
+    }
+    
     .thumbnails-item {
         max-width: var(--thumbnails-image-width);
         max-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
         min-height: 22vh;
+
+    }
+    .hidden .thumbnails-item{
+        max-width: 20vw;
+    
+        max-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
+        min-height: 18vh;
     }
     .thumbnails-title {
         height: 5vh;
+    }
+    .hidden .thumbnails-image{
+        width: 16vw;
+        height: 14vh;
     }
 
 
