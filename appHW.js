@@ -1,17 +1,30 @@
+
 function coloringString(str1,str2){
-    const ar1 = Array.from(str1);
-    const ar2 = Array.from(str2);
-    const res = 0; 
-    for(let i = 0; i >ar1.length; i++){
-        for(let i = 0; i > ar2.length; i++){
-            const ar3 = array.map(function(ar1,ar2){
-                if(ar1[i]==ar2[i]){
-                    return "green";
-                } 
-                else(ar1[i])
-            });
-            
-        }
-    }; 
+const arStr2 =Array.from(str2);
+const res = arStr2.map(function(symbol,index){
+    let color;
+    if(symbol === str1[index]){
+       color = "green";
+    } else  {
+        color = str1.includes(symbol) ? "yellow" : "red";
+    }
+    return color;
+})
+return res;
 }
-coloringString('pappy','apple');
+// console.log (`coloringString('pappy','apple')returns ${coloringString('pappy','apple')}`);
+// console.log (`coloringString('pappy','apple')returns ${coloringString('pappy','pappy')}`);
+
+function getNumbersWithDigitsAmount(digitsAmount,array){
+   const res = array.filter(function(number){
+    const nDigits = getNumberDigits(number);
+    return nDigits === digitsAmount;
+   }); 
+   return res;   
+}
+function getNumberDigits(number){
+    number = Math.abs(Math.trunc(number));
+    const res = number.toString().length;
+    return res;
+}
+console.log(`getNumbersWithDigitsAmount(3,[1,100,-100,25,1000]) return ${getNumbersWithDigitsAmount(3,[1,100,-100,25,1000])}`)
