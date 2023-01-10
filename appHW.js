@@ -1,30 +1,14 @@
-
-function coloringString(str1,str2){
-const arStr2 =Array.from(str2);
-const res = arStr2.map(function(symbol,index){
-    let color;
-    if(symbol === str1[index]){
-       color = "green";
-    } else  {
-        color = str1.includes(symbol) ? "yellow" : "red";
-    }
-    return color;
-})
-return res;
+const array = [20, -10, 333, 1000, 552, 7, -7];
+function evenOddSort(array) {
+   return array.sort(function(e1,e2){
+        return  e1 % 2 == 0 ?  1 : -1;
+      
+});
 }
-// console.log (`coloringString('pappy','apple')returns ${coloringString('pappy','apple')}`);
-// console.log (`coloringString('pappy','apple')returns ${coloringString('pappy','pappy')}`);
-
-function getNumbersWithDigitsAmount(digitsAmount,array){
-   const res = array.filter(function(number){
-    const nDigits = getNumberDigits(number);
-    return nDigits === digitsAmount;
-   }); 
-   return res;   
+console.log(`array: [${array}] evenOddSort => [${evenOddSort(array)}]`);
+function getMin(array) {
+  return array.reduce(function(min, cur) {
+    return cur < min ? cur : min;
+  });
 }
-function getNumberDigits(number){
-    number = Math.abs(Math.trunc(number));
-    const res = number.toString().length;
-    return res;
-}
-console.log(`getNumbersWithDigitsAmount(3,[1,100,-100,25,1000]) return ${getNumbersWithDigitsAmount(3,[1,100,-100,25,1000])}`)
+console.log(`array: [${array}] getMin => ${getMin(array)}`);
