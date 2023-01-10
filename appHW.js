@@ -12,3 +12,4 @@ function getMin(array) {
   });
 }
 console.log(`array: [${array}] getMin => ${getMin(array)}`);
+111
